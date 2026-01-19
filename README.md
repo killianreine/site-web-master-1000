@@ -84,4 +84,4 @@ Le code n’est pas optimisé pour la production mais vise à comprendre les bas
 Projet réalisé par :
 - M. Damien BONNEGENT
 - M. Killian REINE
-- ThomTrooper *(pseudonyme)*
+- [ThomTrooper](https://thomtrooper.github.io)  *(pseudonyme)*
