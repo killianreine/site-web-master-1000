@@ -1,0 +1,129 @@
+div.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+div.player-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    max-width: 1200px;
+    width: 80%;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div.player-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+div.player-head {
+    background-color: #3F4B92;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.player-avatar {
+    width: 64px;
+    height: 64px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: #3F4B92;
+    font-weight: 700;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+div.player-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+h2.player-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Conteneur pour chaque groupe de détails */
+.player-detail {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: auto;
+}
+
+
+/* Bloc principal des détails */
+.player-detail-principal {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Conteneur pour les détails du joueur */
+.player-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style pour chaque ligne (label + valeur) */
+.detail-label {
+    flex: 0 0 40%;
+    font-weight: 700;
+    color: #666;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-value {
+    flex: 0 0 60%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Suppression de la bordure pour les derniers éléments */
+.detail-label:nth-last-child(2),
+.detail-value:last-child {
+    border-bottom: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .detail-label, 
+    .detail-value {
+        flex: 0 0 100%;
+        padding: 0.5rem 0;
+    }
+    
+    .detail-label {
+        border-bottom: none;
+        padding-bottom: 0;
+        font-size: 0.9rem;
+    }
+    
+    .detail-value {
+        padding-top: 0;
+        margin-bottom: 0.75rem;
+    }
+    
+    /* Sauf pour le dernier groupe */
+    .detail-value:last-child {
+        margin-bottom: 0;
+    }
+}

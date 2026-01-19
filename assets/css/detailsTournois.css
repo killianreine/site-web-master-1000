@@ -1,0 +1,156 @@
+/* Styles généraux */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+
+h2.subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 5px double #333;
+
+  }
+  
+  /* Conteneur principal */
+  .page-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  
+  /* En-tête de la page */
+  .header-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+    border-bottom: 2px solid #5A8F7B;
+    padding-bottom: 10px;
+  }
+  
+  /* Message de confirmation */
+  .confirmation-message {
+    background-color: #e8f5e9;
+    border-left: 4px solid #5A8F7B;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Conteneur des tournois */
+  .tournament-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  /* Carte du tournoi */
+  .tournament-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .tournament-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    border: #333 solid 1px;
+  }
+  
+  /* Avatar du tournoi */
+  .tournament-avatar {
+    width: 100%;
+    max-width: 360px;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #5A8F7B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+  }
+  
+  /* En-tête du tournoi */
+  .tournament-head {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Détails du tournoi */
+  .tournament-detail {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    color: #3F4B92;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+  }
+  
+  .detail-value {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border-left: 3px solid #3F4B92;
+   transition: background-color 0.5s ease;
+  }
+
+  .detail-value:hover{
+    color: #f5f5f5;
+    background-color: #3F4B92;
+    border-left: 3px solid #979DC4;
+    font-weight: 600;
+  }
+  
+  /* Bouton de retour */
+  .return-button {
+    display: inline-block;
+    background-color: #5A8F7B;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .return-button:hover {
+    background-color: #4a7a68;
+  }
+  
+  /* Adaptation sur mobile */
+  @media (max-width: 768px) {
+    .tournament-container {
+      justify-content: center;
+    }
+    
+    .tournament-card {
+      width: 100%;
+    }
+  }

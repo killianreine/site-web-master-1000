@@ -1,0 +1,317 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0; 
+    color: #333; 
+    overflow-x: hidden;
+    margin: 0;}
+
+div.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: #616262;
+}
+
+div.navIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.navIcon p {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.iconeTennis {
+    max-width: 85px;
+    padding: 10px;
+}
+
+/*Les titres h1*/
+h1 {
+    font-size: 36px; 
+    color: white; 
+    text-align: center;
+    margin: 0; 
+    margin-bottom: 5px;
+    padding: 10px; 
+    background-color: #616262; 
+    transition: color 0.3s, background-color 0.3s; 
+    border-top: solid white;
+}
+
+h1:hover {
+    background-color: #4a4a4a; 
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: flex-start; 
+    padding: 15px 0;
+    margin: 0px -10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition:  0.3s; 
+    font-weight: 400; 
+}
+
+.navbar ul li a:hover {
+    background: #779949;
+    border-radius: 5px;
+}
+
+
+/*Style semblable à \texttt{...} en LaTex*/
+span.code{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Style du tableau*/
+table.table{
+    width: 99%;
+    margin: 0 auto;
+    overflow-x: auto;
+    table-layout: fixed;
+    border: solid;
+    border-collapse: collapse;
+    border-color: rgba(0, 0, 0, 0);
+    border: 0 20px;
+}
+
+/*Styles sur la première colonne*/
+table.table td:first-child{
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/*Styles sur la première ligne*/
+table.table tr:first-child{
+    font-weight: 900;
+    text-align: center;
+    background-color:#3F4B92;
+    text-transform: uppercase;
+    color: white;
+    height: 10px;
+}
+
+table.table tr:nth-child(2n){
+    background-color: #b8bdd6;
+}
+
+
+table.table tr:hover{
+    color: #333;
+    background-color: #979DC4;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table.table tr:first-child:hover{
+    background-color: #3F4B92;
+    border: none;
+    color: white;
+}
+
+table.table td{
+    height: 30px;
+    border-style: none solid;
+    border-color: #f0f0f0;
+    padding-left: 0.5%;
+}
+
+table.table td:first-child{
+    padding-left: 0;
+}
+
+table.table th{
+    height: 50px;
+}
+
+p {
+    font-size: 24px; 
+    color: #3F4B92; 
+    text-align: left; 
+    margin: 20px 0; 
+    padding: 10px; 
+    border-bottom: 2px solid #616262; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+p:hover {
+    color: #979DC4;
+}
+
+.name{
+    text-transform: uppercase;
+}
+
+.error {
+    background-color: #f8d7da; 
+    color: #721c24; 
+    border: 1px solid #f5c6cb; 
+    padding: 15px; 
+    margin: 0px 10px 10px 10px;
+    border-radius: 5px; 
+    font-size: 16px; 
+    display: block;
+}
+
+.success {
+    background-color: #d4edda; 
+    color: #155724; 
+    display: block;
+    border: 1px solid #c3e6cb; 
+    padding: 15px; 
+    margin: 0px 10px 10px 10px;
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+label.labelForm{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+select.index {
+    padding: 8px 12px;
+    border: 1px solid #155724;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  select:focus {
+    border-color: #779949;
+    box-shadow: 0 0 3px rgba(106, 189, 39, 0.5);
+    outline: none;
+  }
+
+  .modern {
+    padding: 10px 20px;
+    margin: 5px 0px 5px 5px;
+    background-color: #779949; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 500px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modern:hover {
+    background-color: #526b2e;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .modern:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modern:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(17, 218, 67, 0.4);
+  }
+
+button.actionButton{
+    padding: 10px 20px;
+    display: block;
+    margin: 5px auto;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.actionButton{
+    width: 170px;
+}
+
+.buttons{
+    background-color: #f0f0f0;
+}
+
+/*Style pour le bouton détailler*/
+.detailButton:hover{
+    background-color: #4aa55e; 
+}
+
+
+/*Style pour le bouton modifier*/
+
+.modifButton, .suppButton, .detailButton{
+    background-color: #9c9c9c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modifButton:hover{
+    background-color: #cf7c00; 
+}
+
+/*Style pour le bouton supprimer*/
+
+.suppButton:hover{
+    background-color: #cf0000; 
+}
+
+/*Style pour le bouton retour*/
+.btnretour {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #7a7a7b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin: 15px;
+}
+
+
+.btnretour:hover {
+    background-color: #0056b3; 
+}
+
+#groupe{
+    font-size: 15px;
+}
+
+.nom::first-letter{
+    font-size: 25px;
+}

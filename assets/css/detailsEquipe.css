@@ -1,0 +1,32 @@
+@import url('detailsJoueur.css');
+div.team-avatar {
+    width: 360px;
+    height: 44px;
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #3F4B92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: #f5f5f5;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin: 5px;
+}
+
+.team-player {
+    display: flex;
+    gap: 1rem;
+    justify-content:flex-start;
+    margin: 0 5px;
+    padding: 0;
+    margin-top: -10px;
+}
+
+/* Afficher les cartes plus grandes sur les écrans plus larges */
+.team-player > .page-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
