@@ -82,6 +82,6 @@ Le code n’est pas optimisé pour la production mais vise à comprendre les bas
 ## 👨‍🎓 Auteur
 
 Projet réalisé par :
-- M. Damien BONNEGENT
+- [M. Damien BONNEGENT](https://daminoid.github.io/)
 - M. Killian REINE
 - [ThomTrooper](https://thomtrooper.github.io)  *(pseudonyme)*
