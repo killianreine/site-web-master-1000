@@ -84,4 +84,4 @@ Le code n’est pas optimisé pour la production mais vise à comprendre les bas
 Projet réalisé par :
 - [M. Damien BONNEGENT](https://daminoid.github.io/)
 - [M. Killian REINE](https://notes-de-cours-kreine.fr)
-- [ThomTrooper](https://thomtrooper.github.io) *(pseudonyme)*
+- [Thomas](https://thomtrooper.github.io)
